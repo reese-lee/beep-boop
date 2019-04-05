@@ -7,7 +7,9 @@ var beepThree = "I'm sorry, Dave. I'm afraid I can't do that."
 function beepBoopArray(numberInput) {
   var beepBoop = [];
   for (var i = 0; i <= numberInput; i++) {
-    if(i.toString().includes("3")) {
+    if(i === NaN) {
+      return "You are making a wrong boop.";
+    } else if (i.toString().includes("3")) {
       beepBoop.push(beepThree);
     } else if (i.toString().includes("2")) {
       beepBoop.push(beepTwo);
@@ -27,7 +29,7 @@ $(function() {
     var numberInput = parseInt($("#integer-input").val());
     var result = beepBoopArray(numberInput);
     $("#result").show(result);
-    $(".beepBoopNumber").text(result);
+    $(".beepBoopNumber").text(result).fadeIn("slow");
   });
 });
 
