@@ -7,14 +7,14 @@ var beepThree = "I'm sorry, Dave. I'm afraid I can't do that."
 function beepBoopArray(numberInput) {
   var beepBoop = [];
   for (var i = 0; i <= numberInput; i++) {
-    if(i.toString().indexOf("3")) {
+    if(i.toString().includes("3")) {
       beepBoop.push(beepThree);
-    } else if (i.toString().indexOf("2")) {
+    } else if (i.toString().includes("2")) {
       beepBoop.push(beepTwo);
-    } else if (i.toString().indexOf("1")) {
+    } else if (i.toString().includes("1")) {
       beepBoop.push(beepOne);
     } else {
-      beepBoop.push("" + i);
+      beepBoop.push(i);
     }
   } return beepBoop;
 };
