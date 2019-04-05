@@ -3,12 +3,14 @@ var beepOne = "Beep!"
 var beepTwo = "Boop!"
 var beepThree = "I'm sorry, Dave. I'm afraid I can't do that."
 
+
 //to take user input and make it into an array starting from 0 and ending at the input number
 function beepBoopArray(numberInput) {
   var beepBoop = [];
+  var nums = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
   for (var i = 0; i <= numberInput; i++) {
-    if(i === NaN) {
-      return "You are making a wrong boop.";
+    if(!i.toString().includes(i)) {
+      beepBoop.push("You are making a wrong boop.");
     } else if (i.toString().includes("3")) {
       beepBoop.push(beepThree);
     } else if (i.toString().includes("2")) {
@@ -28,8 +30,8 @@ $(function() {
     // var beepBoopArray = [];
     var numberInput = parseInt($("#integer-input").val());
     var result = beepBoopArray(numberInput);
-    $("#result").show(result);
-    $(".beepBoopNumber").text(result).fadeIn("slow");
+    $("#result").fadeIn("slow");
+    $(".beepBoopNumber").text(result);
   });
 });
 
