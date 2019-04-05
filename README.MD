@@ -12,10 +12,18 @@ This is a webpage called Beep Boop that takes a number from a user and returns a
 
 ## Specs
 
-
+| Behavior | Input | Output |
+| ------------- |:-------------:| -----:|
+| Take an integer from a user | 1 |  |
+| Take an integer from a user, and output a range of numbers from 0 to the integer entered | 4 | 0 1 2 3 4 5 |
+| Replace all digits that contain a 1 with "Beep!" | 3 | 0 Beep! 2 3 |
+| Replace all digits that contain a 2 with "Boop!" | 3 | 0 Beep! Boop! 3 |
+| Replace all digits that contain a 3 with "I'm sorry, Dave. I'm afraid I can't do that." | 3 | 0 Beep! Boop! I'm sorry, Dave. I'm afraid I can't do that. |
+| The higher digit in an integer larger than 2 digits will take precedence. | 13 | ... 8 9 Beep! Boop! I'm sorry, Dave. I'm afraid I can't do that. |
 
 
 ## Bugs
+No known bugs.
 
 ## Contact Info
 Please email reese.lee.cy@gmail.com with any questions.
