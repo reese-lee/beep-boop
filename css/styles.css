@@ -23,6 +23,14 @@ img {
   margin-bottom: 10px;
 }
 
+.btn {
+  background-color: #f26a26;
+  font-family: 'Cute Font', cursive;
+  color: black;
+  width: 200px;
+  font-size: 25pt;
+
+}
 input[type=number] {
   width: 500px;
   height: 100px;
@@ -30,6 +38,3 @@ input[type=number] {
   text-align: center;
   color: #f4df42;
 }
-
-font-family: 'Cute Font', cursive;
-font-family: 'Dosis', sans-serif;
