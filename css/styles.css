@@ -3,7 +3,7 @@
 }
 
 body {
-  background-image: url("hills.jpg");
+  background-image: url("nightsky.jpg");
   background-position: center;
   background-repeat: none;
   background-size: 100%;
@@ -13,12 +13,19 @@ body {
 
 h1 {
   font-family: 'Cute Font', cursive;
-  font-size: 100px;
+  font-size: 200px;
+  color: #f4df42;
 }
-#sheep.img {
-  float: left;
+img {
+  width: 200px;
+  margin-bottom: 10px;
 }
 
+input[type=number] {
+  width: 300px;
+  
+
+}
 
 font-family: 'Cute Font', cursive;
 font-family: 'Dosis', sans-serif;
