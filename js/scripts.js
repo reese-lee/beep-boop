@@ -2,12 +2,11 @@
 var beepOne = "Beep!"
 var beepTwo = "Boop!"
 var beepThree = "I'm sorry, Dave. I'm afraid I can't do that."
-
+var nums = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
 
 //to take user input and make it into an array starting from 0 and ending at the input number
 function beepBoopArray(numberInput) {
   var beepBoop = [];
-  var nums = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
   for (var i = 0; i <= numberInput; i++) {
     if(!i.toString().includes(i)) {
       beepBoop.push("You are making a wrong boop.");
@@ -23,10 +22,6 @@ function beepBoopArray(numberInput) {
   } return beepBoop;
 };
 
-
-
-
-
 //user interface logic
 $(function() {
   $("form#converter").submit(function(event) {
@@ -35,8 +30,7 @@ $(function() {
     var numberInput = parseInt($("#integer-input").val());
     var result = beepBoopArray(numberInput);
     $("#result").fadeIn("slow");
-    $(result).append("<li>" + beepBoop[i] + "</li>");
-    $(".beepBoopNumber").text(result)
+    $(".beepBoopNumber").text(result);
   });
 });
 
