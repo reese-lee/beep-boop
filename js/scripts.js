@@ -23,6 +23,10 @@ function beepBoopArray(numberInput) {
   } return beepBoop;
 };
 
+
+
+
+
 //user interface logic
 $(function() {
   $("form#converter").submit(function(event) {
@@ -31,7 +35,8 @@ $(function() {
     var numberInput = parseInt($("#integer-input").val());
     var result = beepBoopArray(numberInput);
     $("#result").fadeIn("slow");
-    $(".beepBoopNumber").text(result);
+    $(result).append("<li>" + beepBoop[i] + "</li>");
+    $(".beepBoopNumber").text(result)
   });
 });
 
