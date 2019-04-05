@@ -4,6 +4,7 @@
     <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
     <link href="css/styles.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Cute+Font|Dosis" rel="stylesheet">
+    <link rel="icon" href="img/robot.jpg">
     <script src="js/jquery-3.3.1.js"></script>
     <script src="js/scripts.js"></script>
     <title>Beep Boop</title>
@@ -11,18 +12,21 @@
   <body>
     <div class="container">
       <h1>Beep Boop!</h1>
-      <img src="css/sheep.jpg" alt="A cute sheep" id="sheep">
+      <img src="img/robot.jpg" alt="A cute sheep" id="robot">
+      <br>
       <form id="converter">
         <div class="form-group">
           <input id="integer-input" type="number" min="0" placeholder="Enter a number!">
         </div>
 
-        <button type="submit" class="btn btn-warning">Beep Boop Me!</button>
+        <button type="submit" class="btn">Beep Boop Me!</button>
       </form>
 
       <div id="result">
         <h2>You've been Beep-Booped!</h2>
-        <p>Result: <span class="beepBoopNumber"></span></p>
+        <p><span class="beepBoopNumber"><ul span id="beepList">
+
+        </ul></span></p>
       </div>
     </div>
   </body>
