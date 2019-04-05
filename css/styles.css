@@ -1,3 +1,24 @@
 #result {
   display: none;
 }
+
+body {
+  background-image: url("hills.jpg");
+  background-position: center;
+  background-repeat: none;
+  background-size: 100%;
+  text-align: center;
+  font-family: 'Dosis', sans-serif;
+}
+
+h1 {
+  font-family: 'Cute Font', cursive;
+  font-size: 100px;
+}
+#sheep.img {
+  float: left;
+}
+
+
+font-family: 'Cute Font', cursive;
+font-family: 'Dosis', sans-serif;
