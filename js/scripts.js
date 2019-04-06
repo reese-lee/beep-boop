@@ -1,13 +1,25 @@
 //business logic
 var beepOne = "Beep!"
 var beepTwo = "Boop!"
-var beepThree = "I'm sorry, Dave. I'm afraid I can't do that."
+var beepThree = "I'm sorry, Dave. I'm afraid I can't do that.<br>"
 var nums = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+
+//original code to test input and output field
+// if (numberInput === 1) {
+//   return beepOne;
+// } else if (numberInput === 2) {
+//   return beepTwo;
+// } else if (numberInput === 3) {
+//     return beepThree;
+// } else {
+//     return "Just kidding, Jenkins"
+// }
 
 //to take user input and make it into an array starting from 0 and ending at the input number
 function beepBoopArray(numberInput) {
   var beepBoop = [];
-  for (var i = 0; i <= numberInput; i++) {
+  var i = 0;
+  for (; i <= numberInput; i++) {
     if(!i.toString().includes(i)) {
       beepBoop.push("You are making a wrong boop.");
     } else if (i.toString().includes("3")) {
@@ -33,14 +45,3 @@ $(function() {
     $(".beepBoopNumber").text(result);
   });
 });
-
-//original code to test input and output field
-// if (numberInput === 1) {
-//   return beepOne;
-// } else if (numberInput === 2) {
-//   return beepTwo;
-// } else if (numberInput === 3) {
-//     return beepThree;
-// } else {
-//     return "Just kidding, Jenkins"
-// }
