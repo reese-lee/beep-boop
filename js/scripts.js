@@ -1,7 +1,7 @@
 //business logic
 var beepOne = "Beep!"
 var beepTwo = "Boop!"
-var beepThree = "I'm sorry, Dave. I'm afraid I can't do that.<br>"
+var beepThree = "I'm sorry, Dave. I'm afraid I can't do that."
 var nums = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
 
 //original code to test input and output field
